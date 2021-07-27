@@ -1,0 +1,14 @@
+@import 'src/client/styles/media-queries';
+
+.header {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+  color: black;
+  @include media((
+          background-color: (all:green, sm: green, md: red, lg: darkgray, xl: black),
+          height: (all: 50px, md: 60px, lg: 75px),
+          color:(xl: white),
+
+  ));
+}

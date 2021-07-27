@@ -1,0 +1,18 @@
+@import "media-queries";
+
+#app-content {
+  margin: auto;
+  @include media((
+          width: (min-lg: 1000px),
+  ))
+}
+
+
+.footer {
+  height: 200px;
+  background-color: blue;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 24px;
+  color: white;
+}

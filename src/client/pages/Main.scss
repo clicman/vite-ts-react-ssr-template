@@ -1,0 +1,37 @@
+@import 'src/client/styles/media-queries';
+
+.page-content {
+          margin-top: 5px;
+  @include media((
+          font-size: (all: 9px, md: 12px, lg: 14px),
+  ));
+}
+
+.post {
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.comment-button {
+  display: inline-block;
+  padding: 0.46em 1.6em;
+  border: 0.1em solid #000000;
+  margin: 0 0.2em 0.2em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  color: #000000;
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: #FFFFFF;
+  text-align: center;
+  transition: all 0.15s;
+
+  &:hover {
+    text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+    color: #3e698e;
+    border-color: #3e698e;
+  }
+;
+}
