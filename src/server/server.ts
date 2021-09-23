@@ -95,8 +95,8 @@ const createServer = async (root = process.cwd(), isProd = process.env.NODE_ENV 
         vite.ssrFixStacktrace(e);
       }
       // eslint-disable-next-line no-console
-      console.error(e.stack);
-      res.status(500).end(e.stack);
+      console.error(e);
+      res.status(500).end(e);
     }
   });
 
